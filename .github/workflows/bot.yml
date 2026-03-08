@@ -34,6 +34,7 @@ jobs:
       - name: Run bot with relay
         env:
           BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
+          BOT_ID: ${{ secrets.BOT_ID }}
           DB_AUTH_KEY: ${{ secrets.DB_AUTH_KEY }}
           INSTANCE_ID: ${{ github.repository }}
         run: |
