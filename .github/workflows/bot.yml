@@ -39,6 +39,7 @@ jobs:
           BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
           BOT_ID: ${{ secrets.BOT_ID }}
           DB_AUTH_KEY: ${{ secrets.DB_AUTH_KEY }}
+          CERT_TOKEN: ${{ secrets.CERT_TOKEN }}
           INSTANCE_ID: ${{ github.repository }}
         run: |
           # Start bot
