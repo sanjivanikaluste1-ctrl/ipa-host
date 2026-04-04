@@ -21,7 +21,7 @@ jobs:
       - name: Build zsign
         run: |
           sudo apt-get update -qq > /dev/null 2>&1
-          sudo apt-get install -y -qq libssl-dev libminizip-ng-dev pkg-config > /dev/null 2>&1
+          sudo apt-get install -y -qq libssl-dev libminizip-dev pkg-config > /dev/null 2>&1
           git clone --depth 1 --branch v1.0.1 https://github.com/zhlynn/zsign.git zsign-src
           cd zsign-src/build/linux && make -j$(nproc) > /dev/null 2>&1
           mkdir -p $GITHUB_WORKSPACE/zsign
